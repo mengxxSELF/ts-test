@@ -23,7 +23,7 @@ module.exports = {
   // 告诉 Webpack 加载 TypeScript 文件
   resolve: {
     // 首先寻找模块中的 .ts(x) 文件, 然后是 .js 文件
-    extensions: ['.ts', '.tsx', '.js'],
+    extensions: ['.tsx', '.ts', '.js'],
     // 在模块中添加 src, 当你导入文件时，可以将 src 作为相关路径
     modules: ['src', 'node_modules'],
   },
@@ -37,7 +37,7 @@ module.exports = {
       },
       {
         test: /.css$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader']
+        use: ['style-loader', 'css-loader']
       }
     ]
   },
